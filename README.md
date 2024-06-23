@@ -21,3 +21,8 @@ On the receiver side, the receiving system will also connect a UART to pins 1 an
 
 ## SourceCode
 The source code uses a UART for the transceiver chip and a second UART for debugging purposes. The second UART is your tool to connect a terminal emulator to the Arduino and to send messages to the Arduino which are then transmitted over RS485 to the bus.
+
+## Testing the RS485 bus
+You can use any RS485 to USB converter and plug that converted into your laptop or PC. Under Windows, the adapter will show up as a COM port. This COM Port can be used by any terminal emulator (YAT, microterm, picoterm, hyperterm, putty, ...).
+
+Given the fact that you are using a known good RS485 to USB adapter, you can exclude one source of error and concentrate on the Arduino code for the RS485 transceiver.
